@@ -1,0 +1,24 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title class="title">
+      Weather Details
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngIf="data">
+      <p class="title-details">Hoy</p>
+      <p>{{ data.weather_state_name }}</p>
+      <p>Max: {{ data.max_temp | number: "1.0-0" }} °C</p>
+      <p>Min: {{ data.min_temp | number: "1.0-0" }} °C</p>
+      <p>Wind Speed: {{ data.wind_speed | number: "1.0-0" }} mph</p>
+      <p><strong>Humidity</strong></p>
+      <p>{{ data.humidity | number: "1.0-0" }} %</p>
+      <p><strong>Visibility</strong></p>
+      <p>{{ data.visibility | number: "1.0-1" }} miles</p>
+      <p><strong>Pressure</strong></p>
+      <p>{{ data.air_pressure | number: "1.0-0" }} mb</p>
+      <p><strong>Confidence</strong></p>
+      <p>{{ data.predictability | number: "1.0-0" }} %</p>
+    </div>
+  </mat-card-content>
+</mat-card>

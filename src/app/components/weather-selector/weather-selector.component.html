@@ -1,0 +1,10 @@
+<mat-form-field class="cities-select">
+  <mat-select
+    (selectionChange)="onSelectionChanged($event)"
+    placeholder="Select a City"
+  >
+    <mat-option *ngFor="let city of cities" [value]="city.woeid">
+      <span>{{ city.name }}</span>
+    </mat-option>
+  </mat-select>
+</mat-form-field>

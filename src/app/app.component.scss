@@ -1,0 +1,55 @@
+.body-container {
+  padding: 80px 20px;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  .left-panel {
+    width: 70%;
+  }
+  .right-panel {
+    width: 25%;
+  }
+}
+
+.city-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  span {
+    font-size: 1.5rem;
+  }
+}
